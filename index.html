@@ -3,85 +3,54 @@
 <!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/script.js"></script>
-
-  <title>Trial1</title>
-  <meta name="description" content="">
-
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
+  
 </head>
 
 <body>
+<canvas id="canvas" width="600" height="600" />
+<script> 
+  var canvas = document.getElementById("canvas");
+var c = canvas.getContext("2d");
 
-  <div class="wrapper">
-    <header>
-      <h1 class="title">Trial1</h1>
-    </header>
-    <div id="container">
-      <p class="tagline"></p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="https://github.com/adle29/Trial1/tarball/master" class="download-button tar"><span>Download</span></a>
-          <a href="https://github.com/adle29/Trial1/zipball/master" class="download-button zip"><span>Download</span></a>
-          <a href="https://github.com/adle29/Trial1" class="code">View Trial1 on GitHub</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-          <h3>Welcome to GitHub Pages.</h3>
+var centerX = canvas.width /2;
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+var x1 = centerX;
+var y1 = 0;
+var x2 = canvas.width;
+var y2 = canvas.height;
+var x3 = 0;
+var y3 = canvas.height;
+var depth = 7;
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+function sierpinki (x1, y1, x2, y2, x3, y3, depth){
+  if ( depth === 0) {
+    drawTriangle (x1, y1, x2, y2, x3, y3);
+  }
+  else {
+    var x12 = (x1 + x2) / 3;
+    var y12 = (y1 + y2) / 3;
+    var x13 = (x1 + x3) / 3;
+    var y13 = (y1 + y3) / 3;
+    var x23 = (x2 + x3) / 2;
+    var y23 = (y2 + y3) / 2;
+    
+    sierpinki (x1, y1, x12, y12, x13, y13, depth-1);
+    sierpinki (x12, y12, x2, y2, x23, y23, depth-1);
+    sierpinki (x13, y13, x23, y23, x3, y3, depth-1);
+  }
+}
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+function drawTriangle (x1, y1, x2, y2, x3, y3) {
+  c.beginPath ();
+  c.moveTo(x1, y1);
+  c.lineTo (x2, y2);
+  c.lineTo(x3, y3);
+  c.fill();
+}
 
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-      <p><a href="https://github.com/adle29" class="avatar"><img src="https://secure.gravatar.com/avatar/184b99dfa867091d655365c87e302cf8?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png" width="48" height="48"/></a> <a href="https://github.com/adle29">adle29</a> maintains <a href="https://github.com/adle29/Trial1">Trial1</a></p>
-
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/adle29/Trial1/tarball/master" class="tar">tar</a><a href="https://github.com/adle29/Trial1/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
+sierpinki (x1, y1, x2, y2, x3, y3, depth);
+  
+</script>
   
 </body>
 </html>
