@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
+  <form>
+    <input style= "height: 40px; width:200px;" type="text" name="commandbox"  >
+    <input style= " font-size: 18px; background: yellow; border:solid orange; width: 50; height: 40px;" type="button" value="Plot" onClick = "plotButtonClicked(this.form.commandbox.value)">
+    <input style= " font-size: 18px; background: yellow; border:solid orange; width: 50; height: 40px;" type="button" value="Clear" onClick="clearCanvas()">
+  </form>
+
+  <p> </p>
+  <canvas id="canvas" width="600" height="600" />
+  <script src="Grapher.js"></script>
+</body>
+</html>

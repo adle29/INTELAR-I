@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+	 <!-- Code written by Abraham Adberstein-->
+	<head>
+		<title> Artificial Intelligence</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
+  		<script src="jQueryUI/jquery.js"></script>
+
+ 		
+ 		<!-- Make a favicon (little picture in addressbar next to the title -->
+    	<link rel="icon" type="image/ico" href="favicon.ico" />
+    	<link rel="stylesheet" href="CSS/main.css" type="text/css" media="all" />
+	</head>
+<body onload="init_main()">
+  <div id="header"> <h1>INTELAR</h1></div>
+  
+  
+   <canvas id="canvas" width="900" height="600"></canvas> 
+  <script src="Speak/speakClient.js"></script>
+  <script src="Speak/speakGenerator.js"></script>
+  <script src="Backgrounds/face.js"></script>
+  <script src="Backgrounds/stars.js"></script>
+  <script src="Backgrounds/stars2.js"></script>
+  <script src="fastTalk.js"></script>
+  <script src="commands.js"></script>
+  
+  <script src="main.js"></script>
+			
+ 
+  <div id="input-zone">
+
+    <p>
+      <textarea id="chatlog"></textarea>
+    </p>
+   
+      <input type="text" x-webkit-speech lang="English" id="commandbox" onkeydown="handle_keypress(event)" onwebkitspeechchange="speech(event)" />
+    </div> 
+     <input type="button" id="empieza" value="Enter" onclick="handle_command()" />
+    
+  
+   <div>
+    <button type="button" id="Graph" onClick="graph()"> Graph Calculator </button>
+    <button type="button" id="Info" onClick="info()"> Info </button>
+    <button type="button" id="Javascript" onClick="javascript()"> Javascript </button>
+  </div>
+
+  <div id="audio"></div>
+  
+</body>
+</html>
+
