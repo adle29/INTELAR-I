@@ -7,7 +7,17 @@ function init_main()
 	// does
 	resize_canvas();
 	$(window).resize(resize_canvas);
+ 
+}
 
+function showHide() {
+    var ele = document.getElementById("text");
+    if(ele.style.display == "block") {
+            ele.style.display = "none";
+      }
+    else {
+        ele.style.display = "block";
+    }
 }
 
 function javascript() {

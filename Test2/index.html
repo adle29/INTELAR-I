@@ -5,8 +5,7 @@
 	<head>
 		<title> Artificial Intelligence</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"> </script>
-  		<script src="jQueryUI/jquery.js"></script>
-
+  	<script src="jQueryUI/jquery.js"></script>
  		
  		<!-- Make a favicon (little picture in addressbar next to the title -->
     	<link rel="icon" type="image/ico" href="favicon.ico" />
@@ -14,7 +13,7 @@
 	</head>
 <body onload="init_main()">
   <div id="header"> <h1>INTELAR</h1></div>
-  
+ 
   
    <canvas id="canvas" width="900" height="600"></canvas> 
   <script src="Speak/speakClient.js"></script>
@@ -24,9 +23,7 @@
   <script src="Backgrounds/stars2.js"></script>
   <script src="fastTalk.js"></script>
   <script src="commands.js"></script>
-  
   <script src="main.js"></script>
-			
  
   <div id="input-zone">
 
@@ -43,8 +40,24 @@
     <button type="button" id="Graph" onClick="graph()"> Graph Calculator </button>
     <button type="button" id="Info" onClick="info()"> Info </button>
     <button type="button" id="Javascript" onClick="javascript()"> Javascript </button>
+    <button type="button" id="Instruc" id="hide" onClick="showHide()"> Show-Hide Instructions</button>
+  </div>
+  
+ <div id="intro">
+   
+   <div id="text" >
+    <h1 style="text-align:center;"> INSTRUCTIONS</h1>
+    <p id="text2"><strong> Intelar is an Artificial intelligence still in development. We recommend 
+     you to use google chrome so you can experiment all features of Intelar, and also deactivate
+     your pop-up blocker. </strong></p>
+     
+     <p><strong>To know more about how to use Intelar and which commands are available just
+     click the button INFO and deactivate your pop-up blocker.</strong></p>
+   </div>
+   
   </div>
 
+   	
   <div id="audio"></div>
   
 </body>
