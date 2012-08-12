@@ -1,0 +1,36 @@
+{"ts":1344744889092,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":true,"ts":1344744899787,"patch":[[{"diffs":[[1,"var canvas "]],"start1":0,"start2":0,"length1":0,"length2":11}]],"length":11,"saved":false}
+{"ts":1344744900726,"patch":[[{"diffs":[[0," canvas "],[1,"= "]],"start1":3,"start2":3,"length1":8,"length2":10}]],"length":13,"saved":false}
+{"ts":1344744905280,"patch":[[{"diffs":[[0,"anvas = "],[1,"docu"]],"start1":5,"start2":5,"length1":8,"length2":12}]],"length":17,"saved":false}
+{"ts":1344744906552,"patch":[[{"diffs":[[0,"s = docu"],[1,"mn"]],"start1":9,"start2":9,"length1":8,"length2":10}]],"length":19,"saved":false}
+{"ts":1344744907516,"patch":[[{"diffs":[[0," = docum"],[-1,"n"]],"start1":10,"start2":10,"length1":9,"length2":8}]],"length":18,"saved":false}
+{"ts":1344744909408,"patch":[[{"diffs":[[0," = docum"],[1,"ent"]],"start1":10,"start2":10,"length1":8,"length2":11}]],"length":21,"saved":false}
+{"ts":1344744912271,"patch":[[{"diffs":[[0,"document"],[1,".getElement"]],"start1":13,"start2":13,"length1":8,"length2":19}]],"length":32,"saved":false}
+{"ts":1344744938605,"patch":[[{"diffs":[[0,"t.getElement"],[1,"ByI"]],"start1":20,"start2":20,"length1":12,"length2":15}]],"length":35,"saved":false}
+{"ts":1344744939518,"patch":[[{"diffs":[[0,"ementByI"],[1,"d"]],"start1":27,"start2":27,"length1":8,"length2":9}]],"length":36,"saved":false}
+{"ts":1344744943118,"patch":[[{"diffs":[[0,"mentById"],[1,"()"]],"start1":28,"start2":28,"length1":8,"length2":10}]],"length":38,"saved":false}
+{"ts":1344744943802,"patch":[[{"diffs":[[0,"ntById()"],[1,";"]],"start1":30,"start2":30,"length1":8,"length2":9}]],"length":39,"saved":false}
+{"ts":1344744945601,"patch":[[{"diffs":[[0,"entById("],[1,"''"],[0,");"]],"start1":29,"start2":29,"length1":10,"length2":12}]],"length":41,"saved":false}
+{"ts":1344744947238,"patch":[[{"diffs":[[0,"ntById('"],[1,"canvas2"],[0,"');"]],"start1":30,"start2":30,"length1":11,"length2":18}]],"length":48,"saved":false}
+{"ts":1344744951608,"patch":[[{"diffs":[[0,"nvas2');"],[1,"\nvar context = "]],"start1":40,"start2":40,"length1":8,"length2":23}]],"length":63,"saved":false}
+{"ts":1344744956289,"patch":[[{"diffs":[[0,"ntext = "],[1,"canvas."]],"start1":55,"start2":55,"length1":8,"length2":15}]],"length":70,"saved":false}
+{"ts":1344744957774,"patch":[[{"diffs":[[0," canvas."],[1,"ge"]],"start1":62,"start2":62,"length1":8,"length2":10}]],"length":72,"saved":false}
+{"ts":1344744959960,"patch":[[{"diffs":[[0,"anvas.ge"],[1,"tContext("]],"start1":64,"start2":64,"length1":8,"length2":17}]],"length":81,"saved":false}
+{"ts":1344744963355,"patch":[[{"diffs":[[0,"Context("],[1,"'2d');\n\n"]],"start1":73,"start2":73,"length1":8,"length2":16}]],"length":89,"saved":false}
+{"ts":1344744964144,"patch":[[{"diffs":[[0,"'2d');\n\n"],[1,"\n"]],"start1":81,"start2":81,"length1":8,"length2":9}]],"length":90,"saved":false}
+{"ts":1344745002827,"patch":[[{"diffs":[[0,"2d');\n\n\n"],[1,"ctx.font=\"20px Georgia\";\nctx.fillText(\"Hello World!\",10,50);\n\nctx.font=\"30px Verdana\";\n// Create gradient\nvar gradient=ctx.createLinearGradient(0,0,c.width,0);\ngradient.addColorStop(\"0\",\"magenta\");\ngradient.addColorStop(\"0.5\",\"blue\");\ngradient.addColorStop(\"1.0\",\"red\");\n// Fill with gradient\nctx.fillStyle=gradient;\nctx.fillText(\"Big smile!\",10,90);\n"]],"start1":82,"start2":82,"length1":8,"length2":359}]],"length":441,"saved":false}
+{"ts":1344745006784,"patch":[[{"diffs":[[0,"d');\n\n\nc"],[1,"ontex"],[0,"t"],[-1,"x"],[0,".font=\"2"]],"start1":83,"start2":83,"length1":18,"length2":22}]],"length":445,"saved":false}
+{"ts":1344745007718,"patch":[[{"diffs":[[0,"rgia\";\nc"],[1,"ontex"],[0,"t"],[-1,"x"],[0,".fillTex"]],"start1":112,"start2":112,"length1":18,"length2":22}]],"length":449,"saved":false}
+{"ts":1344745008967,"patch":[[{"diffs":[[0,",50);\n\nc"],[1,"ontex"],[0,"t"],[-1,"x"],[0,".font=\"3"]],"start1":153,"start2":153,"length1":18,"length2":22}]],"length":453,"saved":false}
+{"ts":1344745015999,"patch":[[{"diffs":[[0,"'2d');\n\n"],[1,"context.fillText(\"Hello World!\",10,50);"],[0,"\ncontext"]],"start1":81,"start2":81,"length1":16,"length2":55}]],"length":492,"saved":false}
+{"ts":1344745019573,"patch":[[{"diffs":[[0,");\n\ncontext.fill"],[-1,"Tex"],[1,"Rec"],[0,"t(\"Hello World!\""]],"start1":85,"start2":85,"length1":35,"length2":35}]],"length":492,"saved":false}
+{"ts":1344745030428,"patch":[[{"diffs":[[0,"illRect("],[-1,"\"Hello World!\""],[1,"can"],[0,",10,50);"]],"start1":98,"start2":98,"length1":30,"length2":19}]],"length":481,"saved":false}
+{"ts":1344745031461,"patch":[[{"diffs":[[0,"Rect(can"],[1,"vas."],[0,",10,50);"]],"start1":101,"start2":101,"length1":16,"length2":20}]],"length":485,"saved":false}
+{"ts":1344745032684,"patch":[[{"diffs":[[0,"(canvas."],[1,"wi"],[0,",10,50);"]],"start1":105,"start2":105,"length1":16,"length2":18}]],"length":487,"saved":false}
+{"ts":1344745033404,"patch":[[{"diffs":[[0,"anvas.wi"],[1,"d"],[0,",10,50);"]],"start1":107,"start2":107,"length1":16,"length2":17}]],"length":488,"saved":false}
+{"ts":1344745035682,"patch":[[{"diffs":[[0,"canvas.w"],[-1,"id"],[0,",10,50);"]],"start1":106,"start2":106,"length1":18,"length2":16}]],"length":486,"saved":false}
+{"ts":1344745038939,"patch":[[{"diffs":[[0,"(can"],[-1,"vas.w"],[0,",10,"]],"start1":105,"start2":105,"length1":13,"length2":8}]],"length":481,"saved":false}
+{"ts":1344745040076,"patch":[[{"diffs":[[0,"illRect("],[-1,"can"],[1,"0"],[0,",10,50);"]],"start1":98,"start2":98,"length1":19,"length2":17}]],"length":479,"saved":false}
+{"ts":1344745041971,"patch":[[{"diffs":[[0,"lRect(0,"],[1,"0,"],[0,"10,50);\n"]],"start1":100,"start2":100,"length1":16,"length2":18}]],"length":481,"saved":false}
+{"ts":1344745046306,"patch":[[{"diffs":[[0,"ect(0,0,"],[-1,"10"],[1,"canvas.width"],[0,",50);\nco"]],"start1":102,"start2":102,"length1":18,"length2":28}]],"length":491,"saved":false}
+{"ts":1344745049001,"patch":[[{"diffs":[[0,"s.width,"],[-1,"50"],[1,"canvas."],[0,");\nconte"]],"start1":115,"start2":115,"length1":18,"length2":23}]],"length":496,"saved":false}
