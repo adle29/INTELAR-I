@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+
+</head>
 <body>
   
   <form>
-    <input style= "height: 40px; width:200px;" type="text" name="commandbox"  >
-    <input style= " font-size: 18px; background: yellow; border:solid orange; width: 50; height: 40px;" type="button" value="Plot" onClick = "model.setEquation(this.form.commandbox.value)">
-    <input style= " font-size: 18px; background: yellow; border:solid orange; width: 50; height: 40px;" type="button" value="Clear" onClick="clearCanvas()">
+    <input style= "width:200px;" type="text" name="commandbox"  >
+    <input style= " color:rgba(255,0,255,0.6);  " type="button" value="Plot" onClick = "model.setEquation(this.form.commandbox.value)">
+  
   </form>
-  <p>Here are some cool function you should try! Please, press the botton plot instead of pressing enter.</p>
+  <div style="color:white; font-size:14px;">
+  <strong><p >Here are some cool function you should try! Please, press the botton plot instead of pressing enter.</p>
    <ul> <li> y = sin(x*time)/x</li> </ul>
    <ul> <li> y = cos(x*time)/x</li> </ul>
-   <ul> <li> y = cos(x*time)/x*time</li> </ul>
-  
-  <canvas id="canvas" width="400" height="400" />
+   <ul> <li> y = cos(x*time)/x*time</li> </ul></strong>
+  </div>
+  <canvas id="canvas" width="300" height="300" style="background:white; position:absolute; left:20px; border:solid white;" />
   <script src ="RequestAnimFrame.js"></script>
   <script src="model.js"></script>
   <script src="view.js"></script>
   <script src="Grapher.js"></script>
   
-   
-   
+      
 </body>
 </html>
 

@@ -119,7 +119,7 @@ function handle_command()
   cspeak(sayResult);
  }
 	else if (cmd_math.test(command)){
-		window.open("Grapher2/Grapher.html", "Graphing Calculator", "width=500, height=500");
+		javascript() ;
 	}
  
  else if (cmd_stop.test(command)){
