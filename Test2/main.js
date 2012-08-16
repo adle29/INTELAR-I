@@ -40,7 +40,7 @@ function hideJavascript(){
 
 
 function graph () {
-    var divStyle2 = 'width:380px; height:560px;  position:absolute; top:50px; left:4px; background-color:yellow;';
+    var divStyle2 = 'width:380px; height:560px;  position:absolute; top:50px; left:4px; background-color:rgba(255,255,0,0.6);';
     
     //create div   
     div.setAttribute('id', 'graphDiv');
