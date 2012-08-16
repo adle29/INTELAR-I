@@ -119,7 +119,7 @@ function handle_command()
   cspeak(sayResult);
  }
 	else if (cmd_math.test(command)){
-		javascript() ;
+		graph() ;
 	}
  
  else if (cmd_stop.test(command)){
